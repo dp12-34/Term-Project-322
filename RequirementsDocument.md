@@ -4,7 +4,7 @@
 --------
 Prepared by:
 
-* `<author1>`,`<organization>`
+* `<Drew Price>`,`<School>`
 * `<author1>`,`<organization>`
 * `<author1>`,`<organization>`
 * `<author1>`,`<organization>`
