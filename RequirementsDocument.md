@@ -1,12 +1,12 @@
 # Software Requirements Specification
 
 ## Your Project Title
---------
+TA Student APP
 Prepared by:
 
-* `<Drew Price>`,`<School>`
-* `<author1>`,`<organization>`
-* `<author1>`,`<organization>`
+* `Drew Price`,`School`
+* `Caden Silberlicht`,`Washington State University`
+* `<Jerel Santos>`,`<School>`
 * `<author1>`,`<organization>`
 
 ---
@@ -47,19 +47,19 @@ Prepared by:
 ----
 # 1. Introduction
 
-This section should provide an overview of the entire document
+This document will highlight our plans for the TA web application, it's user stories, use cases, stakeholders, customers, and what basic requirements it will need to be fully functional.
 
 ## 1.1 Document Purpose
 
-Describe the purpose of the Software Requirement Specification (SRS) document and its intended audience.
+The intended audience is our professor/TAs who will grading and reviewing our web application
 
 ## 1.2 Product Scope
 
-Identify the product whose software requirements are specified in this document. Explain what the product that is covered by this SRS will do. Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals.
+We are making a web application (the TA web app) that allows students to apply for a TA position, and for Professors to choose TA's amongst applications. This service will allow for a quick and streamlined experience for all relevant parties. Our goal is to make this a user friendly experience for anyone new to the interface. 
 
 ## 1.3 Document Overview
 
-Describe what the rest of the document contains and how it is organized.
+In the next section wse will be going over specifications for this project including a information about the many diffent users, their user stories, the use cases for the involved parties, and  our non-functional requirments. Finally, we will show about prototypes and/or mock-ups for our main interface. 
 
 ----
 # 2. Requirements Specification
@@ -68,9 +68,7 @@ This section specifies the software product's requirements. Specify all of the s
 
 ## 2.1 Customer, Users, and Stakeholders
 
-A brief description of the customer, stakeholders, and users of your software.
-
-
+The customers will include all professors who are looking to hire TA/TAs, where the users of this application are those professors, and the students who are looking to become TA's. The stakeholders are out Professor Sakire Arslan Ay and here Associates (TA's)
 ----
 ## 2.2 Use Cases
 
