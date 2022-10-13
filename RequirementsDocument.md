@@ -184,19 +184,16 @@ You may use the following table template for your use cases. Copy-paste this tab
 | ------------------ |--|
 | Name              | Logout. |
 | Users             | Student and Faculty  |
-| Rationale         |   |
-| Triggers          | "enter your reponse here"  |
-| Preconditions     | "enter your reponse here"  |
-| Actions           | "enter your reponse here"  |
-| Alternative paths | "enter your reponse here"  |
-| Postconditions    | "enter your reponse here"  |
-| Acceptance tests  | "enter your reponse here"  |
-| Iteration         | "enter your reponse here"  |
+| Rationale         | All users must be able to logout of their account.  |
+| Triggers          | The user selects the logout button to sign out of their account  |
+| Preconditions     | The user must be logged in  |
+| Actions           | 1. The user indicates to the software to log the user out of their account. <br> 2. The Software responds by reloading the page to a view in which the user can no longer access the website as if they are in an account. <br>3. The Software also ensures their account information is in the database for login. |
+| Alternative paths | 1. In step 2, the user may have accidentally logged out of their account. In this case, the software will keep all current information of the user. When the user logs back into their account, they will be taken to the main page with an updated version where they have access as a user.   |
+| Postconditions    | The user will be successfully logged out and shown the base main page |
+| Acceptance tests  | Make sure the user is logged out and can't make changes as if they are logged in  |
+| Iteration         | Iteration 1  |
 
 
-**Include a swim-lane diagram that illustrates the message flow and activities for following scenario:**
-“A student applies to a research position; initially its status will appear as “Pending”. The faculty who created that position reviews the application and updates the application status to either “Approved for Interview”, or “Hired”, or “Not hired”. The updated status of the application is displayed on the student view.
-The student may delete the pending applications (i.e., whose status is still “Pending”. )”
 
 ![alt text](https://github.com/dp1488/Term-Project-322/blob/Jerel/swimdiagram.JPG)
 
@@ -215,7 +212,6 @@ The student may delete the pending applications (i.e., whose status is still “
 ----
 # 3. User Interface
 
-Here you should include the sketches or mockups for the main parts of the interface.
 ![alt text](https://github.com/dp1488/Term-Project-322/blob/4e35aa151a7fa43a9dcfbf736ae5c6ebc6db4969/UserInterfaceSketch-Faculty%20UI.jpg)
 ![alt text](https://github.com/dp1488/Term-Project-322/blob/4e35aa151a7fa43a9dcfbf736ae5c6ebc6db4969/UserInterfaceSketch-Student%20UI.jpg)
 
@@ -230,27 +226,3 @@ For the websites, give the title, author (if applicable) and the website URL.
 
 ----
 ----
-# Appendix: Grading Rubric
-(Please remove this part in your final submission)
-
-These is the grading rubric that we will use to evaluate your document. 
-
-| Max Points  | **Content** |
-| ----------- | ------- |
-| 10          | Do the requirements clearly state the customers’ needs? |
-| 5           | Do the requirements avoid specifying a design (note: customer-specified design elements are allowed; non-functional requirements may specify some major design requirements)? |
-| | |  
-|    | **Completeness** |
-| 25 | Are use cases written in sufficient detail to allow for design and planning? |
-| 4 | Do use cases have acceptance tests? | 
-| 20 | Is your use case model complete? Are all major use cases included in the document? |
-| 8 | Has the team provided an appropriate swim-lane diagram for the scenario where faculty reviews a student’s application? |
-| 10 |  Are the User Interface Requirements given with some detail? Are there some sketches, mockups?  |
-| | |  
-|   | **Clarity** |
-| 4 | Is the document carefully written, without typos and grammatical errors? |
-| 2 | Is each part of the document in agreement with all other parts? |
-| 2 | Are all items clear and not ambiguous? (Minor document readability issues should be handled off-line, not in the review, e.g. spelling, grammar, and organization). |
-|   |   |
-|    | **GitHub Issues** |
-| 10 | Has the team setup their GitHub Issues page? Have they  generated the list of user stories, use-cases, created milestones, assigned use-cases (issues) to milestones?   Example GitHub repo (check the issues): https://github.com/WSU-CptS322-Fall2022/TermProjectSampleRepo/issues  |
