@@ -1,13 +1,13 @@
 # Software Requirements Specification
 
 ## Your Project Title
---------
+TA Student APP
 Prepared by:
 
-* `<author1>`,`<organization>`
-* `<author1>`,`<organization>`
-* `<author1>`,`<organization>`
-* `<author1>`,`<organization>`
+* `Drew Price`,`School`
+* `Caden Silberlicht`,`Washington State University`
+* `<Jerel Santos>`,`<School>`
+* `Carson Loveless`,`Washington State University`
 
 ---
 
@@ -47,31 +47,29 @@ Prepared by:
 ----
 # 1. Introduction
 
-This section should provide an overview of the entire document
+This document will highlight our plans for the TA web application, it's user stories, use cases, stakeholders, customers, and what basic requirements it will need to be fully functional.
 
 ## 1.1 Document Purpose
 
-Describe the purpose of the Software Requirement Specification (SRS) document and its intended audience.
+The intended audience is our professor/TAs who will grading and reviewing our web application
 
 ## 1.2 Product Scope
 
-Identify the product whose software requirements are specified in this document. Explain what the product that is covered by this SRS will do. Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals.
+We are making a web application (the TA web app) that allows students to apply for a TA position, and for Professors to choose TA's amongst applications. This service will allow for a quick and streamlined experience for all relevant parties. Our goal is to make this a user friendly experience for anyone new to the interface. 
 
 ## 1.3 Document Overview
 
-Describe what the rest of the document contains and how it is organized.
+In the next section wse will be going over specifications for this project including a information about the many diffent users, their user stories, the use cases for the involved parties, and  our non-functional requirments. Finally, we will show about prototypes and/or mock-ups for our main interface. 
 
 ----
-# 2. Requirements Specification
+## 2. Requirements Specification
 
-This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements.
+This section specifies the software product's requirements.
 
 ## 2.1 Customer, Users, and Stakeholders
 
-A brief description of the customer, stakeholders, and users of your software.
+The customers will include all professors who are looking to hire TA/TAs, where the users of this application are those professors, and the students who are looking to become TA's. The stakeholders are out Professor Sakire Arslan Ay and here Associates (TA's)
 
-
-----
 ## 2.2 Use Cases
 
 This section will include the specification for your project in the form of use cases. The section should start with a short description of the actors involved (e.g., regular user, administrator, etc.) and then follow with a list of the use cases.
@@ -91,10 +89,36 @@ Each use case should also have a field called "Iteration" where you specify in w
 
 You may use the following table template for your use cases. Copy-paste this table for each use case you will include in your document.
 
-| Use case # 1      |   |
+| Use case # 1      ||
 | ------------------ |--|
-| Name              | "enter your reponse here"  |
-| Users             | "enter your reponse here"  |
+| Name              | Create Student Account |
+| Users             | Student  |
+| Rationale         | A student should be able to create a new account in order to save their information and login in the future. |
+| Triggers          | The Student selects an option to create a new account.  |
+| Preconditions     | The Student is on the login page (they are not yet logged in) |
+| Actions           | 1. The student indicates that the software is to create a new account. <br>2. The software responds by routing to a page to create an account.  <br>3. The student inputs an username (a WSU email) and password, contact information (firstname, lastname, WSU ID, email, and phone number), and some additional information (major, cumulative GPA, expected graduation date, etc.), and lastly the student selects courses they have served as a TA. <br>4. The software checks if the new account is valid and updates the database.|
+| Alternative paths | 1. In Step 4, the software finds that the new account information is invalid and does not update the database. <br>2. At any point in steps 1-3, the student may decide to abort new account creation. In this case, the software returns to the precondition state. |
+| Postconditions    | The student succesfully creates a new account.  |
+| Acceptance tests  | Make sure the new account is created and added to the database.  |
+| Iteration         | Iteration 1|
+
+| Use case # 2      ||
+| ------------------ |--|
+| Name              | Login.  |
+| Users             | Student  |
+| Rationale         | "enter your reponse here"Student  |
+| Triggers          | "enter your reponse here"  |
+| Preconditions     | "enter your reponse here"  |
+| Actions           | "enter your reponse here"  |
+| Alternative paths | "enter your reponse here"  |
+| Postconditions    | "enter your reponse here"  |
+| Acceptance tests  | "enter your reponse here"  |
+| Iteration         | "enter your reponse here"  |
+
+| Use case # 3      ||
+| ------------------ |--|
+| Name              | View open TA positions.  |
+| Users             | Student  |
 | Rationale         | "enter your reponse here"  |
 | Triggers          | "enter your reponse here"  |
 | Preconditions     | "enter your reponse here"  |
@@ -103,6 +127,47 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Postconditions    | "enter your reponse here"  |
 | Acceptance tests  | "enter your reponse here"  |
 | Iteration         | "enter your reponse here"  |
+
+| Use case # 4      ||
+| ------------------ |--|
+| Name              | Apply for TA positions  |
+| Users             | Student  |
+| Rationale         | "enter your reponse here"  |
+| Triggers          | "enter your reponse here"  |
+| Preconditions     | "enter your reponse here"  |
+| Actions           | "enter your reponse here"  |
+| Alternative paths | "enter your reponse here"  |
+| Postconditions    | "enter your reponse here"  |
+| Acceptance tests  | "enter your reponse here"  |
+| Iteration         | "enter your reponse here"  |
+
+| Use case # 5      ||
+| ------------------ |--|
+| Name              | View and check status of TA applications.  |
+| Users             | Student  |
+| Rationale         | "enter your reponse here"  |
+| Triggers          | "enter your reponse here"  |
+| Preconditions     | "enter your reponse here"  |
+| Actions           | "enter your reponse here"  |
+| Alternative paths | "enter your reponse here"  |
+| Postconditions    | "enter your reponse here"  |
+| Acceptance tests  | "enter your reponse here"  |
+| Iteration         | "enter your reponse here"  |
+
+| Use case # 6      ||
+| ------------------ |--|
+| Name              | Withdraw pending TA applications.  |
+| Users             | Student  |
+| Rationale         | "enter your reponse here"  |
+| Triggers          | "enter your reponse here"  |
+| Preconditions     | "enter your reponse here"  |
+| Actions           | "enter your reponse here"  |
+| Alternative paths | "enter your reponse here"  |
+| Postconditions    | "enter your reponse here"  |
+| Acceptance tests  | "enter your reponse here"  |
+| Iteration         | "enter your reponse here"  |
+
+
 
 
 **Include a swim-lane diagram that illustrates the message flow and activities for following scenario:**
