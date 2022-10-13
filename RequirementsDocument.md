@@ -106,27 +106,27 @@ You may use the following table template for your use cases. Copy-paste this tab
 | ------------------ |--|
 | Name              | Login.  |
 | Users             | Student and Faculty  |
-| Rationale         | "enter your reponse here"Student  |
-| Triggers          | "enter your reponse here"  |
-| Preconditions     | "enter your reponse here"  |
-| Actions           | "enter your reponse here"  |
-| Alternative paths | "enter your reponse here"  |
-| Postconditions    | "enter your reponse here"  |
-| Acceptance tests  | "enter your reponse here"  |
-| Iteration         | "enter your reponse here"  |
+| Rationale         | Users must be able to login to view any information on the webpage. |
+| Triggers          | The user selects an option to login. |
+| Preconditions     | The user is not currently logged in.  |
+| Actions           | 1. The user indicates that the software is to allow them to login. <br>2. The software responds by routing to the login page. <br>3. The user inputs their username and password. <br>4. The software verifies the user login and routes to index page.|
+| Alternative paths | 1. In Step 4, if the username does not exist or the password is incorrect, the software notifies the user and allows them to input username and password again. <br>2. At any step 1-3, the user may abandon their login attempt. In this case the user must stay on the login page as they must be logged in to view other pages. |
+| Postconditions    | The user successfully logs in. |
+| Acceptance tests  | Must make sure the user is successfully logged in.  |
+| Iteration         | Iteration 1  |
 
 | Use case # 3      ||
 | ------------------ |--|
 | Name              | View and apply for open TA positions.  |
 | Users             | Student  |
-| Rationale         | "enter your reponse here"  |
-| Triggers          | "enter your reponse here"  |
-| Preconditions     | "enter your reponse here"  |
-| Actions           | "enter your reponse here"  |
-| Alternative paths | "enter your reponse here"  |
-| Postconditions    | "enter your reponse here"  |
-| Acceptance tests  | "enter your reponse here"  |
-| Iteration         | "enter your reponse here"  |
+| Rationale         | The student must be able to view a list of TA positions and apply for one of them.  |
+| Triggers          | The user selects an option to view available TA positions.  |
+| Preconditions     | User is logged in. |
+| Actions           | 1. The user indicates that the software is to allow them to view open TA positions. <br>2. The software displays open TA positions and their information (course title, semester, instructor's name and information, and qualifications needed.) and an option to apply for each of them. <br>3. The user selects an option to apply for a TA position. <br>4. The software responds by requesting inputs from the user (grade earned in course, the year and semester they took the course, and the year and semester for which they are applying to be a TA). <br>5. The user inputs all requirements. <br>6. The software validates inputs and applies the user to the TA position. |
+| Alternative paths | 1. In Step 2, the software may also display recommended TA positions under another tab. The user may view this alternate tab, they can then choose to apply to a TA position. <br>2. In step 3-5, the user may at any time abort the application process. In this case, the software would return to the list of open TA positions.  |
+| Postconditions    | The user successfully applies to a TA position, or does not attempt to apply to a TA position. |
+| Acceptance tests  | Make sure that the student successfully applied to an open TA position and make sure the database is updated.  |
+| Iteration         | Iteration 2  |
 
 | Use case # 4      ||
 | ------------------ |--|
@@ -158,6 +158,32 @@ You may use the following table template for your use cases. Copy-paste this tab
 | ------------------ |--|
 | Name              | View and select from a list of TA applicants and their qualifications. |
 | Users             | Faculty  |
+| Rationale         | "enter your reponse here"  |
+| Triggers          | "enter your reponse here"  |
+| Preconditions     | "enter your reponse here"  |
+| Actions           | "enter your reponse here"  |
+| Alternative paths | "enter your reponse here"  |
+| Postconditions    | "enter your reponse here"  |
+| Acceptance tests  | "enter your reponse here"  |
+| Iteration         | "enter your reponse here"  |
+
+| Use case # 7      ||
+| ------------------ |--|
+| Name              | Edit user information. |
+| Users             | Student and Faculty  |
+| Rationale         | "enter your reponse here"  |
+| Triggers          | "enter your reponse here"  |
+| Preconditions     | "enter your reponse here"  |
+| Actions           | "enter your reponse here"  |
+| Alternative paths | "enter your reponse here"  |
+| Postconditions    | "enter your reponse here"  |
+| Acceptance tests  | "enter your reponse here"  |
+| Iteration         | "enter your reponse here"  |
+
+| Use case # 8      ||
+| ------------------ |--|
+| Name              | Logout. |
+| Users             | Student and Faculty  |
 | Rationale         | "enter your reponse here"  |
 | Triggers          | "enter your reponse here"  |
 | Preconditions     | "enter your reponse here"  |
