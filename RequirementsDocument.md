@@ -4,9 +4,9 @@
 TA Student APP
 Prepared by:
 
-* `Drew Price`,`School`
+* `Drew Price`,`Washington State University`
 * `Caden Silberlicht`,`Washington State University`
-* `<Jerel Santos>`,`<School>`
+* `Jerel Santos`,`Washington State University`
 * `Carson Loveless`,`Washington State University`
 
 ---
