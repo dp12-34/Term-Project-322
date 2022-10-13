@@ -72,23 +72,6 @@ The customers will include all professors who are looking to hire TA/TAs, where 
 
 ## 2.2 Use Cases
 
-This section will include the specification for your project in the form of use cases. The section should start with a short description of the actors involved (e.g., regular user, administrator, etc.) and then follow with a list of the use cases.
-
-For each use case you should have the following:
-
-* Name,
-* Actors,
-* Triggers (what initiates the use case),
-* Preconditions (in what system state is this use case applicable),
-* Actions (what actions will the code take to implement the use case),
-* Alternative paths
-* Postconditions (what is the system state after the use case is done),
-* Acceptance tests (list one or more acceptance tests with concrete values for the parameters, and concrete assertions that you will make to verify the postconditions).
-
-Each use case should also have a field called "Iteration" where you specify in which iteration you plan to implement this feature.
-
-You may use the following table template for your use cases. Copy-paste this table for each use case you will include in your document.
-
 | Use case # 1      ||
 | ------------------ |--|
 | Name              | Create Account |
@@ -193,7 +176,7 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Acceptance tests  | Make sure the user is logged out and can't make changes as if they are logged in  |
 | Iteration         | Iteration 1  |
 
-
+## Swimlane Diagram
 
 ![alt text](https://github.com/dp1488/Term-Project-322/blob/Jerel/swimdiagram.JPG)
 
@@ -212,7 +195,12 @@ You may use the following table template for your use cases. Copy-paste this tab
 ----
 # 3. User Interface
 
+Sample Faculty UI
+
 ![alt text](https://github.com/dp1488/Term-Project-322/blob/4e35aa151a7fa43a9dcfbf736ae5c6ebc6db4969/UserInterfaceSketch-Faculty%20UI.jpg)
+
+Sample Student UI
+
 ![alt text](https://github.com/dp1488/Term-Project-322/blob/4e35aa151a7fa43a9dcfbf736ae5c6ebc6db4969/UserInterfaceSketch-Student%20UI.jpg)
 
 ----
