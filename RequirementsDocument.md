@@ -199,6 +199,7 @@ You may use the following table template for your use cases. Copy-paste this tab
 The student may delete the pending applications (i.e., whose status is still “Pending”. )”
 
 ![alt text](https://github.com/dp1488/Term-Project-322/blob/Jerel/swimdiagram.JPG)
+
 ----
 ## 2.3 Non-Functional Requirements
 
@@ -215,6 +216,8 @@ The student may delete the pending applications (i.e., whose status is still “
 # 3. User Interface
 
 Here you should include the sketches or mockups for the main parts of the interface.
+![alt text](https://github.com/dp1488/Term-Project-322/blob/4e35aa151a7fa43a9dcfbf736ae5c6ebc6db4969/UserInterfaceSketch-Faculty%20UI.jpg)
+![alt text](https://github.com/dp1488/Term-Project-322/blob/4e35aa151a7fa43a9dcfbf736ae5c6ebc6db4969/UserInterfaceSketch-Student%20UI.jpg)
 
 ----
 # 4. References
