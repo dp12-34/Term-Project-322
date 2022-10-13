@@ -91,21 +91,21 @@ You may use the following table template for your use cases. Copy-paste this tab
 
 | Use case # 1      ||
 | ------------------ |--|
-| Name              | Create Student Account |
-| Users             | Student  |
-| Rationale         | A student should be able to create a new account in order to save their information and login in the future. |
-| Triggers          | The Student selects an option to create a new account.  |
-| Preconditions     | The Student is on the login page (they are not yet logged in) |
-| Actions           | 1. The student indicates that the software is to create a new account. <br>2. The software responds by routing to a page to create an account.  <br>3. The student inputs an username (a WSU email) and password, contact information (firstname, lastname, WSU ID, email, and phone number), and some additional information (major, cumulative GPA, expected graduation date, etc.), and lastly the student selects courses they have served as a TA. <br>4. The software checks if the new account is valid and updates the database.|
-| Alternative paths | 1. In Step 4, the software finds that the new account information is invalid and does not update the database. <br>2. At any point in steps 1-3, the student may decide to abort new account creation. In this case, the software returns to the precondition state. |
-| Postconditions    | The student succesfully creates a new account.  |
+| Name              | Create Account |
+| Users             | Student and Faculty  |
+| Rationale         | A user should be able to create a new account in order to save their information and login in the future. |
+| Triggers          | The user selects an option to create a new account.  |
+| Preconditions     | The user is on the login page (they are not yet logged in). |
+| Actions           | 1. The user indicates that the software is to create a new account. <br>2. The software responds by routing to a page to create an account.  <br>3. The user inputs an username (a WSU email) and password, contact information (firstname, lastname, WSU ID, email, and phone number). <br>4. The software checks if the new account is valid and updates the database.|
+| Alternative paths | 1. In Step 3, if the user is a student, they may add some additional information (major, cumulative GPA, expected graduation date, etc.), and the student may select courses they have served as a TA.<br>2. In Step 4, the software finds that the new account information is invalid and does not update the database. The software then indicates which fields are invalid. <br>3. At any point in steps 1-3, the user may decide to abort new account creation. In this case, the software returns to the precondition state. |
+| Postconditions    | The user succesfully creates a new account.  |
 | Acceptance tests  | Make sure the new account is created and added to the database.  |
 | Iteration         | Iteration 1|
 
 | Use case # 2      ||
 | ------------------ |--|
 | Name              | Login.  |
-| Users             | Student  |
+| Users             | Student and Faculty  |
 | Rationale         | "enter your reponse here"Student  |
 | Triggers          | "enter your reponse here"  |
 | Preconditions     | "enter your reponse here"  |
@@ -117,7 +117,7 @@ You may use the following table template for your use cases. Copy-paste this tab
 
 | Use case # 3      ||
 | ------------------ |--|
-| Name              | View open TA positions.  |
+| Name              | View and apply for open TA positions.  |
 | Users             | Student  |
 | Rationale         | "enter your reponse here"  |
 | Triggers          | "enter your reponse here"  |
@@ -130,7 +130,7 @@ You may use the following table template for your use cases. Copy-paste this tab
 
 | Use case # 4      ||
 | ------------------ |--|
-| Name              | Apply for TA positions  |
+| Name              | View and check status of TA applications.  |
 | Users             | Student  |
 | Rationale         | "enter your reponse here"  |
 | Triggers          | "enter your reponse here"  |
@@ -143,8 +143,8 @@ You may use the following table template for your use cases. Copy-paste this tab
 
 | Use case # 5      ||
 | ------------------ |--|
-| Name              | View and check status of TA applications.  |
-| Users             | Student  |
+| Name              | Create TA positions |
+| Users             | Faculty  |
 | Rationale         | "enter your reponse here"  |
 | Triggers          | "enter your reponse here"  |
 | Preconditions     | "enter your reponse here"  |
@@ -156,8 +156,8 @@ You may use the following table template for your use cases. Copy-paste this tab
 
 | Use case # 6      ||
 | ------------------ |--|
-| Name              | Withdraw pending TA applications.  |
-| Users             | Student  |
+| Name              | View and select from a list of TA applicants and their qualifications. |
+| Users             | Faculty  |
 | Rationale         | "enter your reponse here"  |
 | Triggers          | "enter your reponse here"  |
 | Preconditions     | "enter your reponse here"  |
@@ -166,8 +166,6 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Postconditions    | "enter your reponse here"  |
 | Acceptance tests  | "enter your reponse here"  |
 | Iteration         | "enter your reponse here"  |
-
-
 
 
 **Include a swim-lane diagram that illustrates the message flow and activities for following scenario:**
@@ -224,4 +222,3 @@ These is the grading rubric that we will use to evaluate your document.
 |   |   |
 |    | **GitHub Issues** |
 | 10 | Has the team setup their GitHub Issues page? Have they  generated the list of user stories, use-cases, created milestones, assigned use-cases (issues) to milestones?   Example GitHub repo (check the issues): https://github.com/WSU-CptS322-Fall2022/TermProjectSampleRepo/issues  |
-
