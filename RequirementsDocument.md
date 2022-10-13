@@ -202,11 +202,14 @@ The student may delete the pending applications (i.e., whose status is still “
 ----
 ## 2.3 Non-Functional Requirements
 
-List the non-functional requirements in this section.
-
-You may use the following template for non-functional requirements.
-
-1. [Enter a Concise Requirement Name]:  [provide a concise description, in clear and easily understandable language to specify the requirement]
+1. [Account Saftey]:  [When signing in, the user information should be stored in the database, only accessible to the user.]
+2. [Faculty Information]:  [The Faculty should be able to see all users that apply to be TAs for their class. They should not be able to see other teachers TA information.]
+3. [Design Constraints]:  [The user should be able to smoothly transition between pages in a non-round-a-bout manner. The layout of each page should be easy to navigate with no excess effects or links. ]
+4. [Reusability Methods]:  [The user should be able to go through the process of signing up for as many classes as are available. Each user can only sign up for a class once.]
+5. [Safety and Security]:  [The user (Whether faculty or student) should be able to confidently sign in to and go through the process of signing up without thoughts of security breaches.]
+6. [Scalability ]:  [The software and database should be able to continuously preform well even with an increase in user and information volume.]
+7. [Portability ]:  [The webpage should be accessible on all devices. Ex: Phone, Computer, Tablet.]
+8. [Dependability ]:  [The webpage would have a dependible UI with no room for routing errors. Would also be an overall safe system for personal information.]
 
 ----
 # 3. User Interface
