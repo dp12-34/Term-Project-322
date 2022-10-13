@@ -161,8 +161,8 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Rationale         | Faculty users must be able to view a list of applicants for a TA position. Faculty users also must be able to view the applicant's qualifications, and select an applicant to assign to a TA position they have created. |
 | Triggers          | The user selects an option to view a list of applicants to TA positions they have created.  |
 | Preconditions     | 1. The faculty user must have created at least one TA position. <br>2. The user must be logged in.<br>3. There must be at least one application for one of the user's created TA positions.|
-| Actions           | 1. The user indicates that the software is to display a list of applicants to all of their created TA positions. <br>2. The software responds by displaying a list of applicants to their TA positions. <br>3. The user selects an applicant to view. <br>4. The software displays the selected applicant's qualifications. <br>5. The user selects an option to assign the applicant to the TA position applied for. <br>6. The software assigns the applicant to the given TA position. |
-| Alternative paths | 1. In Step 3, the user may not select an applicant from the list. In this case, the software continues to display the list of applicants. <br>2. In Step 5, the number of TA's needed for the TA position may already be fulfilled. In this case, the software will not allow the applicant to be assigned to the TA position, and will return to dispaying the list of all applicants. <br>3. In Step 5, the user may not choose to assign the applicant to the TA position. In this case, the software would return to displaying the list of all applicants. <br>4. In Step 5, the applicant may already be assigned to a TA position. In this case, the software returns to displaying the list of all applicants (Step 2). |
+| Actions           | 1. The user indicates that the software is to display a list of applicants to all of their created TA positions. <br>2. The software responds by displaying a list of applicants and their qualifications to the user's created TA positions. <br>3. The user selects an option to assign an applicant to the TA position applied for. <br>4. The software assigns the applicant to the given TA position. |
+| Alternative paths | 1. In Step 3, the number of TA's needed for the TA position may already be fulfilled. In this case, the software will not allow the applicant to be assigned to the TA position, and will continue dispaying the list of all applicants. <br>2. In Step 3, the user may not choose to assign the applicant to the TA position. In this case, the software would continue displaying the list of all applicants. <br>3. In Step 3, the applicant may already be assigned to a TA position. In this case, the software returns to displaying the list of all applicants (Step 2). |
 | Postconditions    | The selected applicant is assigned to the TA position applied for. |
 | Acceptance tests  | Make sure the student applicant is assigned to the TA position they applied for. |
 | Iteration         | Iteration 3 |
@@ -178,13 +178,13 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Alternative paths | 1. In Step 2, the user may not be a student. In this case, the software will only request that the user input contact information. <br>2. At any time, the user may abort the process of editing their account information. In this case, the software returns to the index page. |
 | Postconditions    | The user's information is successfully updated. |
 | Acceptance tests  | Make sure that the user's information was successfully edited. |
-| Iteration         | ????  |
+| Iteration         | Iteration 2 |
 
 | Use case # 8      ||
 | ------------------ |--|
 | Name              | Logout. |
 | Users             | Student and Faculty  |
-| Rationale         | "enter your reponse here"  |
+| Rationale         |   |
 | Triggers          | "enter your reponse here"  |
 | Preconditions     | "enter your reponse here"  |
 | Actions           | "enter your reponse here"  |
@@ -198,11 +198,11 @@ You may use the following table template for your use cases. Copy-paste this tab
 “A student applies to a research position; initially its status will appear as “Pending”. The faculty who created that position reviews the application and updates the application status to either “Approved for Interview”, or “Hired”, or “Not hired”. The updated status of the application is displayed on the student view.
 The student may delete the pending applications (i.e., whose status is still “Pending”. )”
 
-
+![alt text](https://github.com/dp1488/Term-Project-322/blob/Jerel/swimdiagram.JPG)
 ----
 ## 2.3 Non-Functional Requirements
 
-1. [Account Saftey]:  [When signing in, the user information should be stored in the database, only accessible to the user.]
+1. [Account Safety]:  [When signing in, the user information should be stored in the database, only accessible to the user.]
 2. [Faculty Information]:  [The Faculty should be able to see all users that apply to be TAs for their class. They should not be able to see other teachers TA information.]
 3. [Design Constraints]:  [The user should be able to smoothly transition between pages in a non-round-a-bout manner. The layout of each page should be easy to navigate with no excess effects or links. ]
 4. [Reusability Methods]:  [The user should be able to go through the process of signing up for as many classes as are available. Each user can only sign up for a class once.]
